@@ -1,0 +1,24 @@
+<h1>Cube Weather Control</h1>
+
+<div id='chart'>
+  <svg style='height:500px'></svg>
+</div>
+
+<script>
+  getHistoricalSensordata();
+  getLatestSensordata();
+</script>
+
+<div class="ui-widget">
+  <label for="fromdate">From</label>
+  <input type="text" id="fromdate" name="fromdate">
+  <label for="todate">To</label>
+  <input type="text" id="todate" name="fromdate">
+  <button id="refresh_historical_btn">Refresh Chart</button>
+</div>
+
+<br />
+<div class="ui-widget">
+  <div id="dynamictable"></div>
+  <button id="refresh_latest_btn">Refresh Latest Values</button>
+</div>
